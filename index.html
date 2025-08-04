@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enhanced html elements</title>
+</head>
+<body>
+    <h2>lists</h2>
+    <h3>unordered list</h3>
+    <ul><li>books
+        <ul>
+            <li>fiction</li>
+            <li>non-fiction</li>
+            <li>science fiction</li>
+        </ul>
+        <h3>nested lists</h3>
+        <ul>
+            <li>fruits
+                <ul>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>orange</li>
+                </ul>
+            </li>
+            <li>vegetables
+                <ol>
+                    <li>carrot</li>
+                    <li>broccoli</li>
+                    <li>spinach</li>
+                </ol>
+            </li>
+    </li></ul>
+    <h2>media</h2>
+    <video controls width="100">
+        <source src="testvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <audio controls>
+        <source src="irima.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.</audio controls>
+    
+    <h2>tables</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>name/th>
+                <th>gender</th>
+                <th>country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sam</td>
+                <td>male</td>
+                <td>kenya</td>
+            </tr>
+            <tr>
+                <td>ez</td>
+                <td>female</td>
+                <td>kenya</td>
+            </tr>
+        </tbody>
+        <h2>forms</h2>
+         <form action="https://example.com/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="jon doe" minlength=" 3" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@example.com" name="email" required>
+            <br>
+            <label for="password">Message:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_male" name="gender" value="male">
+            <label for="gender_female">Female</label>
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="120">
+            <br>
+            <label for="country"></label>
+            <input type="select" id="country" name="country" readonly>
+            <select id="country" name="country">
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+            </select>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <footer>&copy;samuelsaykey 2025</footer>
+    </body>
+</html>
